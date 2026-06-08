@@ -869,29 +869,29 @@
                 <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-pastel-sky shadow-sm space-y-6">
                     <h3 class="font-serif text-xl font-bold text-[#c084fc]">Send Direct Inquiry Message</h3>
                     
-                    <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold text-[#c084fc] uppercase tracking-wider mb-2">Your Name *</label>
-                                <input type="text" id="contactName" required class="w-full bg-pastel-ice border border-pastel-sky rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pastel-brand text-[#c084fc]" placeholder="e.g. John Doe">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-[#c084fc] uppercase tracking-wider mb-2">Email Address *</label>
-                                <input type="email" id="contactEmail" required class="w-full bg-pastel-ice border border-pastel-sky rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pastel-brand text-[#c084fc]" placeholder="e.g. johndoe@gmail.com">
-                            </div>
-                        </div> 
+                <form id="contactForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+            <label class="block text-xs font-bold text-[#c084fc] uppercase tracking-wider mb-2">Your Name *</label>
+            <input type="text" id="contactName" required class="w-full bg-pastel-ice border border-pastel-sky rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pastel-brand text-[#c084fc]" placeholder="e.g. John Doe">
+        </div>
+        <div>
+            <label class="block text-xs font-bold text-[#c084fc] uppercase tracking-wider mb-2">Email Address *</label>
+            <input type="email" id="contactEmail" required class="w-full bg-pastel-ice border border-pastel-sky rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pastel-brand text-[#c084fc]" placeholder="e.g. johndoe@gmail.com">
+        </div>
+    </div> 
 
-                        <div>
-                            <label class="block text-xs font-bold text-[#c084fc] uppercase tracking-wider mb-2">Detailed Message *</label>
-                            <textarea id="contactMessageText" rows="4" required class="w-full bg-pastel-ice border border-pastel-sky rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pastel-brand text-[#c084fc]" placeholder="Type your school board inquiry message details here..."></textarea>
-                        </div>
+    <div>
+        <label class="block text-xs font-bold text-[#c084fc] uppercase tracking-wider mb-2">Detailed Message *</label>
+        <textarea id="contactMessageText" rows="4" required class="w-full bg-pastel-ice border border-pastel-sky rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pastel-brand text-[#c084fc]" placeholder="Type your school board inquiry message details here..."></textarea>
+    </div>
 
-                        <div class="flex justify-end">
-                            <button type="submit" class="bg-pastel-sky text-white hover:bg-pastel-brand px-8 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition shadow-xs">
-                                Send Message <i class="fa-solid fa-paper-plane ml-1.5"></i>
-                            </button>
-                        </div>
-                    </form>
+    <div class="flex justify-end">
+        <button type="submit" class="bg-pastel-sky text-white hover:bg-pastel-brand px-8 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition shadow-xs">
+            Send Message <i class="fa-solid fa-paper-plane ml-1.5"></i>
+        </button>
+    </div>
+</form>
                 </div>
 
             </div>
@@ -1141,6 +1141,24 @@
         window.onload = function() {
             calculateTermFees();
         }
+        
+//Contact form
+        function sendToWhatsApp(event) {
+        event.preventDefault(); // Prevents the form from submitting normally
+
+        // Get values from inputs
+        const name = document.getElementById('contactName').value;
+        const email = document.getElementById('contactEmail').value;
+        const message = document.getElementById('contactMessageText').value;
+
+        // Construct the WhatsApp message
+        const whatsappNumber = "256772500739"; // PUT YOUR ACTUAL NUMBER HERE
+        const text = `*New School Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Message:* ${message}`;
+        
+        // Open WhatsApp
+        const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+        window.open(url, '_blank');
+    }
     </script>
 </body>
 </html>
