@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crested Secondary School</title>
+    <title>Crested Secondary School, Kampala - We Invest In Education</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -165,7 +165,8 @@
                         Operating continuously since 1995 in Makindye West, Kampala, we empower students with a balanced national curriculum, stellar discipline, state-of-the-art computer labs, and holistic spiritual growth.
                     </p>
 
-                <div class="relative z-20 pt-2">
+                    <!-- Your Interactive Button codes embedded with smooth responsive alignment and morph layout -->
+                    <div class="relative z-20 pt-2">
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center w-full">
                             <a id="enroll-button" href="https://ecollegeportal.web.app/" 
                                class="w-full sm:w-auto px-5 py-3.5 bg-pastel-deep text-white font-bold rounded-xl hover:bg-pastel-brand transition-all shadow-lg shadow-pastel-periwinkle/50 text-center text-sm whitespace-nowrap duration-300">
@@ -1472,6 +1473,22 @@
                 icon.style.transform = 'rotate(0deg)';
             }
         }
+
+        // Sticky action button morph on scroll
+        window.addEventListener('scroll', function() {
+            const enrollBtn = document.getElementById('enroll-button');
+            if (!enrollBtn) return;
+            
+            // Trigger morph once scrolled past the hero section (350px)
+            if (window.scrollY > 350) {
+                enrollBtn.classList.add('fixed', 'top-[135px]', 'right-4', 'sm:right-8', 'z-50', 'shadow-2xl', 'scale-95', 'md:scale-100');
+                enrollBtn.classList.remove('w-full', 'sm:w-auto');
+                enrollBtn.classList.add('w-auto');
+            } else {
+                enrollBtn.classList.remove('fixed', 'top-[135px]', 'right-4', 'sm:right-8', 'z-50', 'shadow-2xl', 'scale-95', 'md:scale-100', 'w-auto');
+                enrollBtn.classList.add('w-full', 'sm:w-auto');
+            }
+        });
 
         // Initialize default calculations on DOM load
         window.onload = function() {
