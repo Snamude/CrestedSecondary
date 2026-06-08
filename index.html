@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crested Secondary School, Kampala - We Invest In Education</title>
+    <title>Crested Secondary School</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -70,73 +70,76 @@
         </div>
     </div>
 
-    <!-- Top Micro Info Bar -->
-    <header class="w-full relative z-40">
-        <div class="bg-pastel-glacier text-pastel-slate py-2.5 px-4 text-xs font-semibold border-b border-pastel-periwinkle/30">
-            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-                <div class="flex items-center space-x-4">
-                    <span class="flex items-center gap-1.5 text-pastel-deep"><i class="fa-solid fa-phone text-pastel-brand"></i> +256 772 500 739</span>
-                    <span class="hidden md:inline text-pastel-periwinkle">|</span>
-                    <span class="flex items-center gap-1.5 text-pastel-deep"><i class="fa-solid fa-envelope text-pastel-brand"></i> crestedsecschool@gmail.com</span>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <span class="bg-white text-pastel-deep border border-pastel-periwinkle text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">UNEB Center U1875</span>
-                    <a href="#admission" class="underline hover:text-pastel-brand transition font-bold text-xs">Admissions 2026/2027 Open</a>
+    <!-- Unified Sticky Header Wrapper (Contains both the Top Bar and the Navigation Menu) -->
+    <div class="sticky top-0 z-40 w-full shadow-md bg-white">
+        <!-- Top Micro Info Bar -->
+        <header class="w-full relative">
+            <div class="bg-pastel-glacier text-pastel-slate py-2.5 px-4 text-xs font-semibold border-b border-pastel-periwinkle/30">
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+                    <div class="flex items-center space-x-4">
+                        <span class="flex items-center gap-1.5 text-pastel-deep"><i class="fa-solid fa-phone text-pastel-brand"></i> +256 772 500 739</span>
+                        <span class="hidden md:inline text-pastel-periwinkle">|</span>
+                        <span class="flex items-center gap-1.5 text-pastel-deep"><i class="fa-solid fa-envelope text-pastel-brand"></i> crestedsecschool@gmail.com</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <span class="bg-white text-pastel-deep border border-pastel-periwinkle text-[10px] font-bold px-2.5 py-0.5 rounded tracking-wider uppercase">UNEB Center U1875</span>
+                        <a href="#admission" class="underline hover:text-pastel-brand transition font-bold text-xs">Admissions 2026/2027 Open</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Navigation bar: Now isolated from header constraints to make it completely sticky -->
-    <nav class="bg-white/95 backdrop-blur-md border-b border-pastel-glacier sticky top-0 z-40 shadow-xs">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Brand Identity & Logo -->
-                <a href="#" class="flex items-center space-x-3 group shrink-0">
-                    <div class="w-12 h-12 rounded-xl bg-pastel-ice border border-pastel-sky flex items-center justify-center text-pastel-deep group-hover:scale-105 transition-all">
-                        <i class="fa-solid fa-graduation-cap text-2xl text-pastel-brand"></i>
+        <!-- Navigation bar -->
+        <nav class="bg-white/95 backdrop-blur-md border-b border-pastel-glacier relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <!-- Brand Identity & Logo -->
+                    <a href="#" class="flex items-center space-x-3 group shrink-0">
+                        <div class="w-12 h-12 rounded-xl bg-pastel-ice border border-pastel-sky flex items-center justify-center text-pastel-deep group-hover:scale-105 transition-all">
+                            <i class="fa-solid fa-graduation-cap text-2xl text-pastel-brand"></i>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-base md:text-lg font-bold text-pastel-navy tracking-tight">CRESTED SECONDARY</span>
+                            <span class="block text-[10px] text-pastel-deep uppercase tracking-widest font-bold">Kampala • We Invest in Education</span>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Nav Links - Conforming strictly to the screenshot menu items -->
+                    <div class="hidden lg:flex items-center space-x-5 font-bold text-xs uppercase tracking-wider text-pastel-slate">
+                        <a href="#home" class="nav-link text-pastel-brand hover:text-pastel-deep transition py-2 border-b-2 border-pastel-brand">Home</a>
+                        <a href="#about" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">About Us</a>
+                        <a href="#academics" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Academics</a>
+                        <a href="#uniform" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Uniform</a>
+                        <a href="#calendar" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">School Calendar</a>
+                        <a href="#staff" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Our Staff</a>
+                        <a href="#gallery" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Gallery</a>
+                        <a href="#conduct" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Code of Conduct</a>
+                        <a href="#contact" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Contact Us</a>
                     </div>
-                    <div>
-                        <span class="block font-serif text-base md:text-lg font-bold text-pastel-navy tracking-tight">CRESTED SECONDARY</span>
-                        <span class="block text-[10px] text-pastel-deep uppercase tracking-widest font-bold">Kampala • We Invest in Education</span>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="lg:hidden">
+                        <button onclick="toggleMobileMenu()" class="text-pastel-deep hover:text-pastel-brand focus:outline-none p-2">
+                            <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
+                        </button>
                     </div>
-                </a>
-
-                <!-- Desktop Nav Links - Conforming strictly to the screenshot menu items -->
-                <div class="hidden lg:flex items-center space-x-5 font-bold text-xs uppercase tracking-wider text-pastel-slate">
-                    <a href="#home" class="nav-link text-pastel-brand hover:text-pastel-deep transition py-2 border-b-2 border-pastel-brand">Home</a>
-                    <a href="#about" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">About Us</a>
-                    <a href="#academics" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Academics</a>
-                    <a href="#uniform" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Uniform</a>
-                    <a href="#calendar" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">School Calendar</a>
-                    <a href="#staff" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Our Staff</a>
-                    <a href="#gallery" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Gallery</a>
-                    <a href="#conduct" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Code of Conduct</a>
-                    <a href="#contact" class="nav-link hover:text-pastel-brand transition py-2 border-b-2 border-transparent">Contact Us</a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="lg:hidden">
-                    <button onclick="toggleMobileMenu()" class="text-pastel-deep hover:text-pastel-brand focus:outline-none p-2">
-                        <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
-                    </button>
                 </div>
             </div>
-        </div>
 
-        <!-- Mobile Dropdown Menu matching the screenshot items -->
-        <div id="mobileMenu" class="hidden lg:hidden border-t border-pastel-glacier bg-white px-4 pt-2 pb-6 space-y-2 shadow-lg text-xs uppercase font-bold tracking-wider">
-            <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-brand bg-pastel-ice">Home</a>
-            <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">About Us</a>
-            <a href="#academics" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Academics</a>
-            <a href="#uniform" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Uniform</a>
-            <a href="#calendar" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">School Calendar</a>
-            <a href="#staff" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Our Staff</a>
-            <a href="#gallery" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Gallery</a>
-            <a href="#conduct" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Code of Conduct</a>
-            <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Contact Us</a>
-        </div>
-    </nav>
+            <!-- Mobile Dropdown Menu matching the screenshot items -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t border-pastel-glacier bg-white px-4 pt-2 pb-6 space-y-2 shadow-lg text-xs uppercase font-bold tracking-wider">
+                <a href="#home" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-brand bg-pastel-ice">Home</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">About Us</a>
+                <a href="#academics" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Academics</a>
+                <a href="#uniform" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Uniform</a>
+                <a href="#calendar" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">School Calendar</a>
+                <a href="#staff" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Our Staff</a>
+                <a href="#gallery" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Gallery</a>
+                <a href="#conduct" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Code of Conduct</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-pastel-slate hover:bg-pastel-ice hover:text-pastel-brand transition">Contact Us</a>
+            </div>
+        </nav>
+    </div>
 
     <!-- Home Hero Banner -->
     <section id="home" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32 bg-gradient-to-b from-white via-pastel-ice to-pastel-glacier">
