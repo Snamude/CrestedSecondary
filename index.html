@@ -886,10 +886,13 @@
         <textarea id="contactMessageText" rows="4" required class="w-full bg-pastel-ice border border-pastel-sky rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-pastel-brand text-[#c084fc]" placeholder="Type your school board inquiry message details here..."></textarea>
     </div>
 
-    <div class="flex justify-end">
+    <div class="flex justify-center">
         <button type="submit" class="bg-pastel-sky text-white hover:bg-pastel-brand px-8 py-3 rounded-xl text-xs font-bold tracking-wider uppercase transition shadow-xs">
             Send Message <i class="fa-solid fa-paper-plane ml-1.5"></i>
         </button>
+         <p class="col-span-2 text-base text-slate-400 text-center">
+                            Clicking above will open WhatsApp with your details pre-filled.
+                    </p> 
     </div>
 </form>
                 </div>
@@ -1141,7 +1144,7 @@
         window.onload = function() {
             calculateTermFees();
         }
-        
+
 //Contact form
         function sendToWhatsApp(event) {
         event.preventDefault(); // Prevents the form from submitting normally
