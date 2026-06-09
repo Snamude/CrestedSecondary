@@ -562,71 +562,86 @@
     </section>
 
     <!-- School Calendar Section -->
-    <section id="calendar" class="py-20 bg-pastel-ice scroll-mt-32">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-6 space-y-4">
-                 <h2 class="font-sans text-3xl sm:text-4xl font-bold text-pastel-brand">School Calendar</h2>
-                
+   <section id="calendar" class="pt-10 pb-20 bg-pastel-ice scroll-mt-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-pastel-navy mb-2">School Calendar</h2>
+            <p class="text-pastel-slate max-w-2xl mx-auto">Stay up to date with Crested Secondary School's academic terms, events, and key milestones.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Term 1 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-pastel-sky/30 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-pastel-glacier text-pastel-brand rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-calendar-days text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-pastel-navy leading-tight">Term One</h3>
+                        <span class="text-xs font-bold text-pastel-brand uppercase tracking-wider">Feb - May 2026</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 text-sm text-pastel-slate">
+                    <li class="flex justify-between border-b border-pastel-glacier pb-2"><span>Opening Date</span><span class="font-bold text-pastel-navy">Feb 2nd</span></li>
+                    <li class="flex justify-between border-b border-pastel-glacier pb-2"><span>S.1 Orientation</span><span class="font-bold text-pastel-navy">Feb 9th</span></li>
+                    <li class="flex justify-between text-pastel-deep bg-pastel-glacier/50 p-2 rounded"><span>Term Holiday</span><span class="font-bold">Starts April 18th</span></li>
+                </ul>
             </div>
 
-            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-pastel-sky/30 shadow-xs max-w-4xl mx-auto">
-                <div class="flex items-center justify-between border-b border-pastel-glacier pb-4 mb-6">
-                    <h3 class="font-sans text-lg font-bold text-[#c084fc]">Key Term Milestones (Current Year)</h3>
-                    <span class="text-xs bg-pastel-ice text-pastel-deep border border-pastel-sky px-3 py-1 rounded-full font-bold uppercase">Term 1 Timeline</span>
-                </div>
-
-                <div class="space-y-6">
-                    <!-- Event 1 -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-14 h-14 rounded-xl bg-pastel-glacier flex flex-col items-center justify-center text-pastel-deep font-bold shrink-0 border border-pastel-sky">
-                            <span class="text-sm leading-none">Feb</span>
-                            <span class="text-lg leading-none mt-1">02</span>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="font-bold text-[#c084fc] text-sm sm:text-base">Term 1 Official Opening Day</h4>
-                            <p class="text-xs text-pastel-slate">Reporting of all continuing S.2, S.3, S.4, S.5, and S.6 boarding and day students by 8:00 AM.</p>
-                        </div>
+            <!-- Term 2 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-pastel-sky/30 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-pastel-glacier text-pastel-brand rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-calendar-days text-xl"></i>
                     </div>
-
-                    <!-- Event 2 -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-14 h-14 rounded-xl bg-pastel-glacier flex flex-col items-center justify-center text-pastel-deep font-bold shrink-0 border border-pastel-sky">
-                            <span class="text-sm leading-none">Feb</span>
-                            <span class="text-lg leading-none mt-1">09</span>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="font-bold text-[#c084fc] text-sm sm:text-base">Senior One (S.1) Orientation & Entry</h4>
-                            <p class="text-xs text-pastel-slate">Special welcoming and setup week for S.1 new entrants. Registration desks open from morning.</p>
-                        </div>
-                    </div>
-
-                    <!-- Event 3 -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-14 h-14 rounded-xl bg-pastel-glacier flex flex-col items-center justify-center text-pastel-deep font-bold shrink-0 border border-pastel-sky">
-                            <span class="text-sm leading-none">Mar</span>
-                            <span class="text-lg leading-none mt-1">15</span>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="font-bold text-[#c084fc] text-sm sm:text-base">First Visitation Sunday & Prayer Day</h4>
-                            <p class="text-xs text-pastel-slate">Parents of boarding students are cordially invited to check academic milestones and participate in campus prayers.</p>
-                        </div>
-                    </div>
-
-                    <!-- Event 4 -->
-                    <div class="flex items-start gap-4">
-                        <div class="w-14 h-14 rounded-xl bg-pastel-glacier flex flex-col items-center justify-center text-pastel-deep font-bold shrink-0 border border-pastel-sky">
-                            <span class="text-sm leading-none">Apr</span>
-                            <span class="text-lg leading-none mt-1">17</span>
-                        </div>
-                        <div class="space-y-1">
-                            <h4 class="font-bold text-[#c084fc] text-sm sm:text-base">Beginning of End of Term Examinations</h4>
-                            <p class="text-xs text-pastel-slate">Compulsory assessment exams covering all syllabus components for both O & A level scholars.</p>
-                        </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-pastel-navy leading-tight">Term Two</h3>
+                        <span class="text-xs font-bold text-pastel-brand uppercase tracking-wider">May - August 2026</span>
                     </div>
                 </div>
+                <ul class="space-y-4 text-sm text-pastel-slate">
+                    <li class="flex justify-between border-b border-pastel-glacier pb-2"><span>Opening Date</span><span class="font-bold text-pastel-navy">May 20th</span></li>
+                    <li class="flex justify-between border-b border-pastel-glacier pb-2"><span>Visitation Sunday</span><span class="font-bold text-pastel-navy">June 15th</span></li>
+                    <li class="flex justify-between text-pastel-deep bg-pastel-glacier/50 p-2 rounded"><span>Mid-Term Break</span><span class="font-bold">July 10th - 14th</span></li>
+                </ul>
+            </div>
+
+            <!-- Term 3 -->
+            <div class="bg-white p-8 rounded-[2rem] border border-pastel-sky/30 shadow-sm hover:shadow-md transition">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 bg-pastel-glacier text-pastel-brand rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-calendar-days text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-pastel-navy leading-tight">Term Three</h3>
+                        <span class="text-xs font-bold text-pastel-brand uppercase tracking-wider">Sept - Dec 2026</span>
+                    </div>
+                </div>
+                <ul class="space-y-4 text-sm text-pastel-slate">
+                    <li class="flex justify-between border-b border-pastel-glacier pb-2"><span>Opening Date</span><span class="font-bold text-pastel-navy">Sept 10th</span></li>
+                    <li class="flex justify-between border-b border-pastel-glacier pb-2"><span>Final Exams</span><span class="font-bold text-pastel-navy">Nov 5th</span></li>
+                    <li class="flex justify-between text-pastel-deep bg-pastel-glacier/50 p-2 rounded"><span>Term Holiday</span><span class="font-bold">Starts Dec 10th</span></li>
+                </ul>
             </div>
         </div>
-    </section>
+
+        <div class="mt-8 text-center">
+            <p class="font-bold text-pastel-deep text-sm italic">* Dates are subject to change by the Ministry of Education and Sports.</p>
+        </div>
+
+        <!-- Portal Call-to-Action -->
+        <div class="mt-12 bg-white rounded-[2rem] border border-pastel-sky/30 p-8 md:p-12 text-center shadow-sm">
+            <h3 class="text-2xl md:text-3xl font-extrabold text-pastel-navy mb-6">Stay Informed via Official Channels</h3>
+            <p class="text-pastel-slate text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
+                For urgent announcements, policy updates, and direct communication with the school administration, please monitor your registered email and our official notice boards.
+            </p>
+            <a href="#contact" class="inline-block bg-pastel-brand hover:bg-pastel-deep text-white font-bold px-10 py-4 rounded-xl transition-all shadow-md uppercase tracking-wider text-sm">
+                Contact Administration
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- Our Staff Section -->
     <section id="staff" class="py-20 bg-white border-b border-pastel-glacier scroll-mt-32">
