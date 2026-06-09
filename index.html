@@ -242,11 +242,12 @@
         <!-- Principal Welcome Card -->
     <div class="lg:col-span-5">
     <div class="relative">
-        <!-- Optional: Keep the rotation if you like the "floating" card effect -->
-        <div class="absolute inset-0 -m-2 bg-pastel-glacier rounded-3xl -rotate-2"></div>
+        <!-- 1. The decorative background "shadow" layer -->
+        <div class="absolute inset-0 bg-pastel-glacier rounded-r-xl"></div>
         
-        <!-- UPDATED STRUCTURE: Replicated "Everlight" border-left style -->
-        <div class="relative p-6 border-l-4 border-pastel-brand bg-pastel-ice rounded-r-xl shadow-xl space-y-6">
+        <!-- 2. The Main Box (New Structure) -->
+        <!-- I removed 'rounded-3xl', 'border', and 'p-8' which were fighting the new style -->
+        <div class="relative p-8 border-l-4 border-pastel-brand bg-pastel-ice rounded-r-xl shadow-xl space-y-6">
             
             <!-- Card content -->
             <div class="flex items-center space-x-4">
