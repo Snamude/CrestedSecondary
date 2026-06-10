@@ -857,84 +857,59 @@
             A glimpse into life at Crested Secondary School. Click any photo or video to expand.                
         </p>
             </div>
-
-            <!-- Gallery Filter Buttons -->
-            <div class="flex justify-center gap-2 mb-8 flex-wrap">
-                <button onclick="filterGallery('all')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-pastel-sky text-white border border-transparent">All</button>
-                <button onclick="filterGallery('labs')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-pastel-slate hover:bg-pastel-glacier border border-pastel-sky">Labs & Tech</button>
-                <button onclick="filterGallery('life')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-pastel-slate hover:bg-pastel-glacier border border-pastel-sky">Campus Life</button>
-                <button onclick="filterGallery('sports')" class="gallery-filter-btn px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider bg-white text-pastel-slate hover:bg-pastel-glacier border border-pastel-sky">Sports & Culture</button>
-            </div>
-
+ 
             <!-- Gallery Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
-                <!-- item 1 -->
-                <div class="gallery-item labs bg-white rounded-2xl overflow-hidden border border-pastel-sky/30 shadow-xs">
-                    <div class="h-48 bg-pastel-glacier flex items-center justify-center text-pastel-deep text-4xl">
-                        <i class="fa-solid fa-computer"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-sm text-[#c084fc]">Computer Coding Sessions</h4>
-                        <p class="text-xs text-pastel-slate mt-1">Students typing and coding in the recently upgraded computer lab suite.</p>
-                    </div>
-                </div>
-
-                <!-- item 2 -->
-                <div class="gallery-item labs bg-white rounded-2xl overflow-hidden border border-pastel-sky/30 shadow-xs">
-                    <div class="h-48 bg-pastel-glacier flex items-center justify-center text-pastel-deep text-4xl">
-                        <i class="fa-solid fa-flask-vial"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-sm text-[#c084fc]">Chemistry Practicals Prep</h4>
-                        <p class="text-xs text-pastel-slate mt-1">S.4 candidates analyzing compounds inside the fully equipped UNEB science lab.</p>
-                    </div>
-                </div>
-
-                <!-- item 3 -->
-                <div class="gallery-item life bg-white rounded-2xl overflow-hidden border border-pastel-sky/30 shadow-xs">
-                    <div class="h-48 bg-pastel-glacier flex items-center justify-center text-pastel-deep text-4xl">
-                        <i class="fa-solid fa-music"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-sm text-[#c084fc]">School Choir Choir Practice</h4>
-                        <p class="text-xs text-pastel-slate mt-1">The Crested School Choir rehearsing musical presentations for general assembly.</p>
-                    </div>
-                </div>
-
-                <!-- item 4 -->
-                <div class="gallery-item life bg-white rounded-2xl overflow-hidden border border-pastel-sky/30 shadow-xs">
-                    <div class="h-48 bg-pastel-glacier flex items-center justify-center text-pastel-deep text-4xl">
-                        <i class="fa-solid fa-person-praying"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-sm text-[#c084fc]">Weekly Chapel Devotion</h4>
-                        <p class="text-xs text-pastel-slate mt-1">Quiet moments of reflection and inter-denominational prayers on Wednesday.</p>
-                    </div>
-                </div>
-
-                <!-- item 5 -->
-                <div class="gallery-item sports bg-white rounded-2xl overflow-hidden border border-pastel-sky/30 shadow-xs">
-                    <div class="h-48 bg-pastel-glacier flex items-center justify-center text-pastel-deep text-4xl">
-                        <i class="fa-solid fa-trophy"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-sm text-[#c084fc]">Inter-House Athletics Cup</h4>
-                        <p class="text-xs text-pastel-slate mt-1">Highlight moment celebrating competitive sportsmanship on Kampala regional pitches.</p>
-                    </div>
-                </div>
-
-                <!-- item 6 -->
-                <div class="gallery-item sports bg-white rounded-2xl overflow-hidden border border-pastel-sky/30 shadow-xs">
-                    <div class="h-48 bg-pastel-glacier flex items-center justify-center text-pastel-deep text-4xl">
-                        <i class="fa-solid fa-futbol"></i>
-                    </div>
-                    <div class="p-4">
-                        <h4 class="font-bold text-sm text-[#c084fc]">Senior Soccer Team</h4>
-                        <p class="text-xs text-pastel-slate mt-1">Our student sportsmen representing Crested Secondary School with pride.</p>
-                    </div>
-                </div>
+           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+ 
+             <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/Specioza Kabasinga 2.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Vocational training">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Head Teacher Ms. Kabasinga in her office.</figcaption>
+            </figure> 
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery18.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="School activities">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Prefectorate Body 2021/2022</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery19.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Student collaboration">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Everlight College students showing their certificates.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery20.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Learning in progress">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Everlight College students showing their certificates.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery30.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Practical session">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Guest giving a Speech.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery31.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Classroom engagement">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Guest giving a Speech.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery32.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Educational workshop">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Director of Studies Mr. Busubiri giving a Speech.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery33.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Student activities">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Guest giving a Speech.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery34.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Student project">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Head Teacher Ms. Kabasinga giving a speech.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery35.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Creative session">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Everlight College student giving a speech.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/gallery40.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="School event">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Guest giving a Speech.</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img onclick="openLightbox(this.src, this.alt)" src="images/20260416_133645.jpg" class="w-full h-64 object-cover object-top rounded-2xl cursor-pointer hover:opacity-90 transition shadow-sm border-2 border-white" alt="Artistic development">
+                <figcaption class="mt-2 text-base font-medium text-slate-700">Everlight College students with drums.</figcaption>
+            </figure>
             </div>
-        </div>
     </section>
 
     <!-- Code of Conduct Section -->
