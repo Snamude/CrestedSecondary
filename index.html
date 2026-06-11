@@ -86,9 +86,7 @@
     </style>
 </head>
 <body class="font-sans bg-pastel-ice text-pastel-slate antialiased leading-relaxed">
-
  
-
     <!-- Unified Sticky Header Wrapper (Contains both the Top Bar and the Navigation Menu) -->
     <div class="sticky top-0 z-40 w-full shadow-md bg-white">
         <!-- Top Micro Info Bar -->
@@ -1203,117 +1201,7 @@ window.addEventListener('scroll', function() {
             activeButton.classList.add('bg-pastel-sky', 'text-white', 'active');
         }
 
-        // Realtime tuition estimation mechanism
-        function calculateTermFees() {
-            const residency = document.getElementById('feeResidency').value;
-            const level = document.getElementById('feeLevel').value;
-            const hasUniform = document.getElementById('feeUniform').checked;
-            const hasAdmission = document.getElementById('feeAdmission').checked;
-            const hasLunch = document.getElementById('feeLunch').checked;
-
-            let baseFee = 0;
-            let uniformPrice = 0;
-            let admissionPrice = hasAdmission ? 50000 : 0;
-            let lunchPrice = 0;
-
-            const uniformText = document.getElementById('uniformPriceText');
-            const lunchContainer = document.getElementById('lunchOptionContainer');
-
-            if (residency === 'day') {
-                lunchContainer.style.display = 'flex';
-                lunchPrice = hasLunch ? 100000 : 0;
-
-                if (level === 'olevel') {
-                    baseFee = 600000;
-                    uniformPrice = hasUniform ? 250000 : 0;
-                    if (uniformText) uniformText.textContent = 'UGX 250,000';
-                } else {
-                    baseFee = 650000;
-                    uniformPrice = hasUniform ? 250000 : 0;
-                    if (uniformText) uniformText.textContent = 'UGX 250,000';
-                }
-            } else {
-                lunchContainer.style.display = 'none';
-                lunchPrice = 0;
-
-                if (level === 'olevel') {
-                    baseFee = 1200000;
-                    uniformPrice = hasUniform ? 300000 : 0;
-                    if (uniformText) uniformText.textContent = 'UGX 300,000';
-                } else {
-                    baseFee = 1300000;
-                    uniformPrice = hasUniform ? 300000 : 0;
-                    if (uniformText) uniformText.textContent = 'UGX 300,000';
-                }
-            }
-
-            const addonsTotal = uniformPrice + admissionPrice + lunchPrice;
-            const grandTotal = baseFee + addonsTotal;
-
-            document.getElementById('outTermTuition').textContent = 'UGX ' + baseFee.toLocaleString('en-US');
-            document.getElementById('outAddons').textContent = 'UGX ' + addonsTotal.toLocaleString('en-US');
-            document.getElementById('outGrandTotal').textContent = 'UGX ' + grandTotal.toLocaleString('en-US');
-        }
-
-        // Multi-step profile form logic
-        function navigateWizard(stepNum) {
-            const step1 = document.getElementById('formStep1');
-            const step2 = document.getElementById('formStep2');
-            const indicator1 = document.getElementById('stepIndicator1');
-            const indicator2 = document.getElementById('stepIndicator2');
-
-            if (stepNum === 2) {
-                const name = document.getElementById('studName').value;
-                const parent = document.getElementById('parentName').value;
-                const phone = document.getElementById('parentPhone').value;
-
-                if (!name || !parent || !phone) {
-                    showToast('Missing Entries', 'Please enter candidate name, parent name, and telephone details before proceeding.');
-                    return;
-                }
-
-                step1.classList.add('hidden');
-                step2.classList.remove('hidden');
-                indicator2.classList.remove('bg-white', 'text-pastel-slate');
-                indicator2.classList.add('bg-pastel-sky', 'text-white');
-            } else {
-                step2.classList.add('hidden');
-                step1.classList.remove('hidden');
-                indicator2.classList.remove('bg-pastel-sky', 'text-white');
-                indicator2.classList.add('bg-white', 'text-pastel-slate');
-            }
-        }
-
-        function toggleFormClassStructure() {
-            const target = document.getElementById('targetClass').value;
-            const olevelBlock = document.getElementById('olevelPerformanceBlock');
-            const alevelBlock = document.getElementById('alevelPerformanceBlock');
-
-            if (target === 'S5' || target === 'S6') {
-                olevelBlock.classList.add('hidden');
-                alevelBlock.classList.remove('hidden');
-            } else {
-                alevelBlock.classList.add('hidden');
-                olevelBlock.classList.remove('hidden');
-            }
-        }
-
-        // Form submit handler
-        function handleAdmissionSubmit(event) {
-            event.preventDefault();
-            const studentName = document.getElementById('studName').value;
-            showToast('Registration Active', 'Thank you! Admission profile for ' + studentName + ' has been saved to the admissions database.');
-            document.getElementById('admissionForm').reset();
-            navigateWizard(1);
-            toggleFormClassStructure();
-        }
-
-        function handleContactSubmit(event) {
-            event.preventDefault();
-            const senderName = document.getElementById('contactName').value;
-            showToast('Message Sent', 'Hello ' + senderName + ', your inquiry has been logged successfully.');
-            document.getElementById('contactForm').reset();
-        }
+   
 
         // Interactive Media Filter
         function filterGallery(category) {
